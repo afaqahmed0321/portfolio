@@ -24,7 +24,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Reactjs, ReactNative, Angular, Node Javascript and Go. </b>
+                <b className="purple"> Reactjs, ReactNative, Angular, Node and Javascript. </b>
               </i>
               <br />
               <br />
