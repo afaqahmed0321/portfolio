@@ -46,7 +46,7 @@ export default function About() {
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
                   I'm a passionate Full Stack Developer with over{" "}
-                  <strong className="text-amber-400">5+ years of experience</strong>
+                  <strong className="text-amber-400">5+ years of experience{" "}</strong>
                   building exceptional digital experiences. I specialize in modern JavaScript frameworks and have a
                   strong foundation in both frontend and backend technologies.
                 </p>
