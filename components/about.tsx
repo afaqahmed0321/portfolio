@@ -1,17 +1,38 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Code, Rocket, Users, Award } from "lucide-react"
+import { useCounter } from "@/hooks/use-counter"
 
 export default function About() {
   const [activeCard, setActiveCard] = useState<number | null>(null)
+  const [isVisible, setIsVisible] = useState(false)
 
   const stats = [
-    { icon: Code, label: "Years Experience", value: "5+", color: "text-amber-400" },
-    { icon: Rocket, label: "Projects Completed", value: "50+", color: "text-yellow-400" },
-    { icon: Users, label: "Happy Clients", value: "25+", color: "text-gray-300" },
-    { icon: Award, label: "Technologies", value: "15+", color: "text-amber-300" },
+    { icon: Code, label: "Years Experience", value: 5, color: "text-amber-400" },
+    { icon: Rocket, label: "Projects Completed", value: 50, color: "text-yellow-400" },
+    { icon: Users, label: "Happy Clients", value: 25, color: "text-gray-300" },
+    { icon: Award, label: "Technologies", value: 15, color: "text-amber-300" },
   ]
+
+  // Intersection Observer to trigger animation when section is visible
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true)
+        }
+      },
+      { threshold: 0.3 }
+    )
+
+    const section = document.getElementById("about")
+    if (section) {
+      observer.observe(section)
+    }
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
     <section
@@ -67,6 +88,13 @@ export default function About() {
           <div className="grid grid-cols-2 gap-6">
             {stats.map((stat, index) => {
               const Icon = stat.icon
+              const animatedValue = useCounter({
+                end: stat.value,
+                start: 0,
+                duration: 2000,
+                delay: isVisible ? index * 200 : 0
+              })
+              
               return (
                 <div
                   key={index}
@@ -83,7 +111,9 @@ export default function About() {
                       <Icon size={32} />
                     </div>
                     <div>
-                      <div className="text-3xl font-bold text-white mb-1">{stat.value}</div>
+                      <div className="text-3xl font-bold text-white mb-1">
+                        {animatedValue}+
+                      </div>
                       <div className="text-gray-400 font-medium">{stat.label}</div>
                     </div>
                   </div>

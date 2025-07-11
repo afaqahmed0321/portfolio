@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Github, Linkedin, Mail, Phone, ArrowDown, Download, Code2 } from "lucide-react"
+import { Github, Linkedin, Mail, Phone, ArrowDown, Download, Code2, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Hero() {
@@ -121,6 +121,12 @@ export default function Hero() {
                 href: "tel:+923013740860",
                 icon: Phone,
                 label: "Phone",
+                color: "hover:text-green-400 hover:bg-green-900/20",
+              },
+              {
+                href: "https://wa.me/923013740860",
+                icon: MessageCircle,
+                label: "WhatsApp",
                 color: "hover:text-green-400 hover:bg-green-900/20",
               },
             ].map(({ href, icon: Icon, label, color }, index) => (

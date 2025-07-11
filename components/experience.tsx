@@ -8,9 +8,9 @@ export default function Experience() {
       location: "Lahore, Pakistan",
       period: "Oct 2024 - Present",
       description: [
-        "Led a fullstack team of 4 developers, ensuring best practices in code quality, security, and performance",
-        "Developed and maintained the company's SaaS dashboard using React + TypeScript",
-        "Implemented REST APIs in PHP Laravel, improving response times by 30%",
+        "Led a fullstack team of developers, ensuring best practices in code quality, security, and performance",
+        "Developed and maintained the company's SaaS dashboard using Next + TypeScript",
+        "Implemented REST APIs in Node.js Nestt.js and, improving response times by 30%",
         "Built a custom component library for UI consistency across products",
         "Ensured SOC 2 Type 2 compliance by integrating robust security practices",
       ],
@@ -69,7 +69,7 @@ export default function Experience() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold text-white mb-4">
-            Professional <span className="bg-gradient-to-r from-yellow-300 via-gray-300 to-yllow-600 bg-clip-text text-transparent">Experience</span>
+            Professional <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-400 bg-clip-text text-transparent">Experience</span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-gray-500 to-yellow-600 mx-auto mb-6"></div>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
@@ -99,7 +99,7 @@ export default function Experience() {
                         <h4 className="text-xl font-semibold text-yellow-400 mb-2">{exp.company}</h4>
                       </div>
                       {exp.current && (
-                        <span className="inline-block px-3 py-1 bg-green-400/10 text-green-300 text-sm font-medium rounded-full border border-green-400/20">
+                        <span className="inline-block px-3 py-1 bg-yellow-400/10 text-yellow-300 text-sm font-medium rounded-full border border-amber-400/20">
                           Current
                         </span>
                       )}

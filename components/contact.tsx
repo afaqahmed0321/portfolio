@@ -35,10 +35,10 @@ export default function Contact() {
         }, 3000)
       } else {
         // Optionally show error
-        alert("Message bhejne mein masla aaya. Dobara koshish karein.")
+        alert("Error sending message. Try Again.")
       }
     } catch (err) {
-      alert("Network ya server error. Dobara koshish karein.")
+      alert("Network or server error. Try Again.")
     }
     setIsSubmitting(false)
   }
