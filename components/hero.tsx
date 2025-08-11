@@ -47,7 +47,7 @@ export default function Hero() {
               </h1>
               <div className="text-2xl md:text-4xl font-semibold text-gray-300 mb-8 animate-fade-in-up animation-delay-400">
                 <span className="bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 bg-clip-text text-transparent">
-                  Full Stack Developer
+                  Senior Fullstack Engineer
                 </span>
               </div>
             </div>

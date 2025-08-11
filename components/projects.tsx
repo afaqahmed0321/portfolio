@@ -1,8 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ExternalLink, Github, Filter, Sparkles } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { Filter, Sparkles } from "lucide-react"
 
 export default function Projects() {
   const [filter, setFilter] = useState("all")
@@ -10,91 +9,72 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Smart Email",
+      title: "SNAP PROMISE",
       description:
-        "Full-stack email marketing platform for CRM-style campaign management. Built with Next.js (frontend) and Python (backend). Features AI-powered email content generation, automated follow-ups, and secure authentication with Clerk.",
-      technologies: ["Next.js", "Python", "AI", "Clerk", "Email Automation"],
-      category: "ai",
-      image: "/placeholder.svg?height=300&width=400",
+        "Led development of comprehensive web app (Angular) and mobile app (React Native). Integrated REST APIs, Google/Apple Auth, Stripe payments, and Recoil state management. Successfully deployed on Ubuntu, Google Play Console, and App Store Connect.",
+      technologies: ["Angular", "React Native", "REST APIs", "Stripe", "Google Auth", "Apple Auth", "Recoil"],
+      category: "mobile",
+      image: "/SPromise.jpg",
       gradient: "from-yellow-500 to-yellow-600",
-      ai: true,
+      ai: false,
     },
     {
-      title: "Calling Agent",
+      title: "RECRUITER AI",
       description:
-        "AI-powered virtual assistant for real estate websites. Built with Next.js (frontend) and Python (backend), integrated with OpenAI and ElevenLabs for natural language and voice. Users can upload PDF knowledge base, train a custom AI bot, and embed it on their site for real-time property support.",
-      technologies: ["Next.js", "Python", "OpenAI", "ElevenLabs", "PDF Parsing", "Voice AI"],
+        "Advanced resume parser using OpenAI to analyze uploaded resumes. Integrated Firecrawl for scraping user-linked profiles (GitHub) and RapidAPI for LinkedIn data. Features AI-powered job-candidate match scoring using OpenAI's semantic analysis.",
+      technologies: ["OpenAI", "Firecrawl", "RapidAPI", "Resume Parsing", "AI Matching"],
       category: "ai",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/lemur.jpg",
       gradient: "from-yellow-400 to-orange-500",
       ai: true,
     },
     {
-      title: "Lead By Carry",
+      title: "EDVENITY",
       description:
-        "Automated lead generation and outreach platform. Users search by location and business filters, then the system finds leads and auto-fills contact forms with personalized messages. Built with Next.js (frontend), Python (backend), and Google Maps API integration.",
-      technologies: ["Next.js", "Python", "Google Maps API", "Automation"],
-      category: "web",
-      image: "/placeholder.svg?height=300&width=400",
+        "Multi-role platform (Recruiter, User, Admin) where recruiters post jobs and users apply with AI-powered matching. Features OpenAI scoring system and integrated AI bot for scheduling, evaluating, and reporting interviews back to recruiters.",
+      technologies: ["Multi-role Platform", "OpenAI", "AI Bot", "Interview Scheduling", "Job Matching"],
+      category: "ai",
+      image: "/edvenitty.jpg",
       gradient: "from-gray-500 to-slate-600",
+      ai: true,
     },
     {
-      title: "FixMyDevice",
+      title: "LEMUR",
       description:
-        "Full-stack web app for mobile repair shops. Built with Next.js. Features device sales, service booking, warranty management, and real-time admin dashboard for service requests and status tracking.",
-      technologies: ["Next.js", "Admin Dashboard", "Real-time Updates"],
+        "Next.js application to fetch and store healthcare facilities by ZIP code using Google Maps API. Integrated Firecrawl for scraping facility website data and displaying enriched metadata with custom APIs for data management.",
+      technologies: ["Next.js", "Google Maps API", "Firecrawl", "Data Scraping", "Healthcare"],
       category: "web",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/lemur.jpg",
       gradient: "from-gray-400 to-slate-500",
     },
     {
-      title: "Equity",
+      title: "INSTANT SPACE",
       description:
-        "Mobile investment and property staking platform. Built with React Native (frontend), Node.js (backend), and PostgreSQL. Users can explore, verify, and invest in real estate opportunities with secure KYC and staking process.",
-      technologies: ["React Native", "Node.js", "PostgreSQL", "KYC", "Mobile"],
-      category: "mobile",
-      image: "/placeholder.svg?height=300&width=400",
+        "Full stack development with React and Node.js. Built comprehensive chat system, interactive map integration, and multilingual modules using React-Redux for state management.",
+      technologies: ["React", "Node.js", "React-Redux", "Chat System", "Maps", "Multilingual"],
+      category: "web",
+      image: "/IS.jpg",
       gradient: "from-gray-600 to-gray-800",
     },
     {
-      title: "Ilham",
+      title: "GROW AND SHARE",
       description:
-        "AI-powered idea estimation and enhancement platform. Built with Next.js and OpenAI. Users submit ideas, get AI-generated suggestions, timeline, budget, and execution steps. Ideal for entrepreneurs and creatives.",
-      technologies: ["Next.js", "OpenAI", "AI", "Idea Management"],
-      category: "ai",
-      image: "/placeholder.svg?height=300&width=400",
-      gradient: "from-yellow-500 to-yellow-500",
-      ai: true,
+        "PWA job-matching platform with React, Node.js, and MongoDB. Features advanced search functionality, map integration, and Stripe subscription system for premium features.",
+      technologies: ["PWA", "React", "Node.js", "MongoDB", "Stripe", "Job Matching", "Maps"],
+      category: "web",
+      image: "/gns.png",
+      gradient: "from-yellow-500 to-yellow-600",
     },
     {
-      title: "ServeOnRoute",
+      title: "SERVE ON ROUTE",
       description:
-        "Community-driven parcel delivery mobile app. Built with React Native (frontend) and Next.js (backend). Connects users, riders, and admins for peer-to-peer parcel delivery based on daily commute routes.",
-      technologies: ["React Native", "Next.js", "Real-time", "Mobile"],
+        "Parcel service mobile application built with React Native, Nest.js, and MongoDB. Features Stripe payment integration, real-time chat using Socket.io, and comprehensive map functionality for delivery tracking.",
+      technologies: ["React Native", "Nest.js", "MongoDB", "Stripe", "Socket.io", "Maps"],
       category: "mobile",
-      image: "/placeholder.svg?height=300&width=400",
-      gradient: "from-gray-400 to-slate-500",
+      image: "/Sor.jpg",
+      gradient: "from-gray-600 to-gray-800",
     },
-    {
-      title: "Recruiter AI",
-      description:
-        "AI-powered resume parser and job-candidate matching platform. Uses OpenAI for semantic analysis, profile scraping from GitHub/LinkedIn, and intelligent matching algorithms.",
-      technologies: ["OpenAI", "Firecrawl", "RapidAPI", "AI/ML", "Next.js"],
-      category: "ai",
-      image: "/placeholder.svg?height=300&width=400",
-      gradient: "from-yellow-400 to-yellow-500",
-      ai: true,
-    },
-    {
-      title: "Edvenity",
-      description:
-        "Multi-role job matching platform with AI-powered interview scheduling and evaluation. Features recruiter dashboard, candidate portal, and automated interview reporting. Built with React, Node.js, and OpenAI.",
-      technologies: ["React", "Node.js", "OpenAI", "AI Bot", "PostgreSQL"],
-      category: "ai",
-      image: "/placeholder.svg?height=300&width=400",
-      gradient: "from-gray-400 to-slate-500",
-      ai: true,
-    },
+
   ]
 
   const filters = [
@@ -157,9 +137,14 @@ export default function Projects() {
             >
               {/* Project image/header */}
               <div className={`h-48 bg-gradient-to-br ${project.gradient} relative overflow-hidden`}>
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
                 <div className="absolute inset-0 bg-black/20"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-white text-6xl font-bold opacity-20">
+                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <div className="text-white text-6xl font-bold opacity-50">
                     {project.title
                       .split(" ")
                       .map((word) => word[0])

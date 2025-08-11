@@ -9,10 +9,10 @@ export default function About() {
   const [isVisible, setIsVisible] = useState(false)
 
   const stats = [
-    { icon: Code, label: "Years Experience", value: 5, color: "text-amber-400" },
+    { icon: Code, label: "Years Experience", value: 6, color: "text-amber-400" },
     { icon: Rocket, label: "Projects Completed", value: 50, color: "text-yellow-400" },
-    { icon: Users, label: "Happy Clients", value: 25, color: "text-gray-300" },
-    { icon: Award, label: "Technologies", value: 15, color: "text-amber-300" },
+    { icon: Users, label: "Happy Clients", value: 30, color: "text-gray-300" },
+    { icon: Award, label: "Technologies", value: 25, color: "text-amber-300" },
   ]
 
   // Intersection Observer to trigger animation when section is visible
@@ -63,22 +63,22 @@ export default function About() {
           {/* Left side - Content */}
           <div className="space-y-6">
             <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/10">
-              <h3 className="text-3xl font-bold text-white mb-6">Full Stack Developer with a Passion for Excellence</h3>
+              <h3 className="text-3xl font-bold text-white mb-6">Senior Fullstack Engineer with a Passion for Excellence</h3>
               <div className="space-y-4 text-gray-300 leading-relaxed">
                 <p>
-                  I'm a passionate Full Stack Developer with over{" "}
-                  <strong className="text-amber-400">5+ years of experience{" "}</strong>
-                  building exceptional digital experiences. I specialize in modern JavaScript frameworks and have a
+                  I'm a passionate Senior Fullstack Engineer with over{" "}
+                  <strong className="text-amber-400">6 years of experience{" "}</strong>
+                  building exceptional digital experiences. I specialize in modern JavaScript frameworks, AI integration, and have a
                   strong foundation in both frontend and backend technologies.
                 </p>
                 <p>
                   Throughout my career, I've had the privilege of working with diverse teams and cutting-edge
-                  technologies, from leading fullstack teams at <strong className="text-amber-400">Artilence</strong> to
-                  developing complex AI-powered platforms.
+                  technologies, from leading fullstack teams at <strong className="text-amber-400">TechMade</strong> to
+                  developing complex AI-powered platforms and SaaS dashboards with SOC 2 Type 2 compliance.
                 </p>
                 <p>
-                  I believe in writing clean, maintainable code while ensuring exceptional user experiences. My goal is
-                  to create solutions that not only work flawlessly but also delight users.
+                  I believe in writing clean, maintainable code while ensuring exceptional user experiences. My expertise includes
+                  LangChain, OpenAI API integration, and building scalable solutions that not only work flawlessly but also delight users.
                 </p>
               </div>
             </div>
@@ -129,22 +129,40 @@ export default function About() {
           <div className="flex flex-wrap justify-center gap-4">
             {[
               "LangChain",
-              "Artificial Intelligence",
+              "Artificial Intelligence", 
+              "OpenAI API",
               "Vapi",
               "ElevenLabs",
-              "React",
+              "React.js",
               "Next.js",
               "TypeScript",
+              "JavaScript",
+              "Angular",
+              "React Native",
               "Node.js",
+              "Express.js",
+              "Nest.js",
               "Python",
               "PostgreSQL",
               "MongoDB",
+              "MySQL",
+              "Firebase",
+              "Supabase",
+              "Prisma",
+              "GraphQL",
+              "REST APIs",
               "AWS",
               "Docker",
-              "GraphQL",
-              "React Native",
-              "Angular",
-              
+              "Vercel",
+              "Git",
+              "Tailwind CSS",
+              "Bootstrap",
+              "Material UI",
+              "Stripe",
+              "Socket.io",
+              "Postman",
+              "Jira",
+              "Slack"
             ].map((tech, index) => (
               <span
                 key={index}
