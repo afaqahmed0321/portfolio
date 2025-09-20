@@ -3,22 +3,7 @@ import { Calendar, MapPin } from "lucide-react"
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Fullstack Engineer",
-      company: "TechMade",
-      location: "Remote",
-      period: "Jul 2024 – Jun 2025",
-      description: [
-        "Led a Fullstack team of 4 developers, ensuring best practices in code quality, security, and performance",
-        "Developed and maintained the company's SaaS dashboard using React + TypeScript",
-        "Responsible for multiple projects including Frontend, Backend, Client Calls, and technical leadership",
-        "Built a custom component library for UI consistency across products",
-        "Ensured SOC 2 Type 2 compliance by integrating robust security practices",
-        "Conducted weekly code reviews, standups, and mentoring sessions for junior developers",
-      ],
-      current: true,
-    },
-    {
-      title: "Software Engineer",
+      title: "Senior Javascript Engineer | Mern & Cloud",
       company: "Artilence",
       location: "Lahore, Pakistan",
       period: "May 2023 – Sep 2024",
@@ -33,10 +18,25 @@ export default function Experience() {
       ],
     },
     {
+      title: "Senior Fullstack Engineer",
+      company: "TechMade",
+      location: "Remote",
+      period: "Oct 2023 – Oct 2024",
+      description: [
+        "Led a Fullstack team of 4 developers, ensuring best practices in code quality, security, and performance",
+        "Developed and maintained the company's SaaS dashboard using React + TypeScript",
+        "Responsible for multiple projects including Frontend, Backend, Client Calls, and technical leadership",
+        "Built a custom component library for UI consistency across products",
+        "Ensured SOC 2 Type 2 compliance by integrating robust security practices",
+        "Conducted weekly code reviews, standups, and mentoring sessions for junior developers",
+      ],
+      current: true,
+    },
+    {
       title: "Software Engineer",
       company: "eSoftage",
       location: "Lahore, Pakistan",
-      period: "Oct 2021 – Apr 2023",
+      period: "May 2022 – Sep 2023",
       description: [
         "Developed and maintained web applications using React Js, Next Js and Node Js",
         "Participated in the full software development lifecycle, including coding, testing, and deployment",
@@ -47,10 +47,22 @@ export default function Experience() {
       ],
     },
     {
-      title: "Junior Software Engineer",
+      title: "Software Engineer",
       company: "XEROBIT TECHNOLOGY LTD",
       location: "Remote",
-      period: "Jan 2020 – Sep 2021",
+      period: "Feb 2021 – Apr 2022",
+      description: [
+        "Assisted in developing a customer analytics dashboard using React and PHP",
+        "Built API endpoints for data visualization using Nodejs",
+        "Collaborated with designers to improve UX/UI consistency",
+        "Composed technical documentation and onboarded new developers",
+      ],
+    },
+    {
+      title: "Junior Software Engineer",
+      company: "REDFIRE AI",
+      location: "onsite",
+      period: "Mar 2020 – Feb 2021",
       description: [
         "Assisted in developing a customer analytics dashboard using React and PHP",
         "Built API endpoints for data visualization using Nodejs",
