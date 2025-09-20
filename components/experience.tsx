@@ -6,7 +6,7 @@ export default function Experience() {
       title: "Senior Javascript Engineer | Mern & Cloud",
       company: "Artilence",
       location: "Lahore, Pakistan",
-      period: "May 2023 – Sep 2024",
+      period: "Oct 2024 – Present",
       description: [
         "Developed Multiple Projects at eSoftage, Worked on map-based, referral, and MS Word-like editor modules",
         "Lead projects with React-Native, Angular.js, and Postgress, managing real-time data using REST APIs",
